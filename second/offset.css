@@ -10,7 +10,7 @@
 
 .pink {
     background: pink;
-
+    /* font-size: 28px; */
 }
 
 .orange {
@@ -19,8 +19,12 @@
 
 .blue {
     background: #007bff;
+    /* font-size: 22px; */
 }
+
 
 .green {
     background: yellowgreen;
+    /* font-size: 12px; */
 }
+
