@@ -107,7 +107,7 @@
 }
 
 #testeimonials::before{
-   background: rgb(117, 134, 148, 0.2);
+   background: rgb(117, 134, 148, 0.1);
    content: "";
    position: absolute;
    top: 0;
@@ -118,12 +118,17 @@
 
 #testeimonials img {
     border-radius: 50%;
+    max-width: 100%;
 }
 
-.news-post img{
-   width: 100%;
-   margin-bottom: 10px;
+  #testeimonials p{
    margin-top: 10px;
+  }
+
+.news-post img{
+   max-width: 100%;
+   margin-bottom: 5px;
+   margin-top: 5px;
 }
 
 .news-post h3 {
@@ -158,3 +163,132 @@ a.readmore{
    margin-left: 5px;
   }
 
+ #footer-sidebar{
+   color: #fff;
+   background: #405D72;
+   padding: 20px 0;
+ }
+
+    .footer-widget h3::after{
+      content: '';
+      background: #fff;
+      display: block;
+      width: 50px;
+      height: 2px;
+      margin: 5px 0;
+    }
+
+    .footer-widget a{
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .latest-news {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .latest-news li {
+      margin-bottom: 3px;
+      
+    }
+
+    .latest-news li::before{
+      content: "\f7f4";
+      font-family: bootstrap-icons!important;
+      padding-right: 5px;
+      margin-left: 5px;
+    }
+
+    #footer {
+      background: #2c3e50;
+      color: #fff;
+      padding: 10px 0;
+    }
+
+    #social-icons {
+      list-style: none;
+      color: #fff;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: end;
+    }
+
+    #social-icons li{
+      display: inline-block;
+      padding-left: 10px;
+    }
+
+    #social-icons li a{
+      color: #fff;
+      font-size: 25px;
+    }
+    
+             /* break-point for median screen */
+
+    @media (max-width: 992px) {
+      .news-post{
+         margin-bottom: 30px;
+      }  
+    }
+
+
+             /* break-point for mobile and tablet screen */
+    @media (max-width: 768px) {
+             
+      #logo{
+         text-align: center;
+         margin: 10px 0;
+      }
+
+      #menu {
+         text-align: center;
+      }
+
+      .banner-title h1{
+         font-size: 1.7rem;
+      }
+
+      .section{
+         padding-top: 40px;
+         padding-bottom: 40px;
+      }
+
+      .banner-title{
+         padding-top: 0;
+      }
+
+      #testeimonials {
+            text-align: center;
+            margin-bottom: 30px;
+           }
+
+      .service-box {
+         margin-bottom: 30px;
+      }
+
+     
+
+      .footer-widget{
+            margin-bottom: 20px;
+           }
+     
+      #footer{
+         text-align: center;
+      }
+
+      #social-icons {
+         margin-top: 10px;
+      }
+      
+    }
+
+
+
+
+
+   
+   
+ 
